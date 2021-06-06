@@ -9,8 +9,9 @@ const App = () => {
     inputRef.current.focus();
   }, []);
 
+  /* Methods */
   // Submit handler
-  const submitHandler = (e) => {
+  const addMsgHandler = (e) => {
     e.preventDefault();
 
     // Clear input value
@@ -19,7 +20,7 @@ const App = () => {
 
   return (
     <>
-      <form onSubmit={(e) => submitHandler(e)}>
+      <form onSubmit={(e) => addMsgHandler(e)}>
         <input
           type="text"
           value={message}
