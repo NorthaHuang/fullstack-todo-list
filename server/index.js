@@ -4,7 +4,7 @@ const express = require('express');
 const bodyParser = require('body-parser'); // For create the `req.body` object
 const cors = require('cors'); // Provides Express middleware to enable CORS with various options
 
-const database = require('./app/models');
+const database = require('./models');
 
 const app = express();
 
